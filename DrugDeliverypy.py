@@ -51,20 +51,6 @@ left, right = st.columns([1.2, 3])
 with left:
     st.markdown("### HERA HEALTH SOLUTIONS")
 
-with right:
-    st.markdown(
-        """
-        <div style="display:flex; gap:24px; justify-content:flex-end; padding-top:8px;">
-          <span>Home</span>
-          <span>Pipeline</span>
-          <span>Technology</span>
-          <span>Press</span>
-          <span>Careers</span>
-          <span>Contact</span>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
 
 st.markdown("---")
 
