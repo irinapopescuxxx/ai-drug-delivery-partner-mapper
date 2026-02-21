@@ -3,9 +3,83 @@ import pandas as pd
 
 st.set_page_config(page_title="AI Drug Delivery Partner Mapper", page_icon="🤝", layout="wide")
 
-st.title("💊 AI in Drug Discovery & Delivery: Partner Mapper (Hera-style)")
-st.caption("Who is the best fit for Hera Health solution in AI and drug delivery - Irina Popescu")
+# ---- Hera-style CSS ----
+st.markdown(
+    """
+    <style>
+      .block-container { padding-top: 2rem; padding-bottom: 2.5rem; }
 
+      .hera-hero h1 {
+        font-size: 3.0rem;
+        line-height: 1.05;
+        margin-bottom: 0.25rem;
+        letter-spacing: 0.2px;
+      }
+      .hera-sub {
+        font-size: 1.05rem;
+        opacity: 0.9;
+        margin-top: 0.25rem;
+        margin-bottom: 1.25rem;
+      }
+
+      div.stButton > button,
+      div.stDownloadButton > button {
+        border-radius: 999px !important;
+        padding: 0.6rem 1.1rem !important;
+        border: 1px solid rgba(127,182,255,0.45) !important;
+      }
+
+      [data-testid="stDataFrame"] {
+        border-radius: 14px;
+        overflow: hidden;
+      }
+
+      [data-testid="stMetric"] {
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.06);
+        border-radius: 14px;
+        padding: 12px 14px;
+      }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+# ---- Hera-style header ----
+left, right = st.columns([1.2, 3])
+
+with left:
+    st.markdown("### HERA HEALTH SOLUTIONS")
+
+with right:
+    st.markdown(
+        """
+        <div style="display:flex; gap:24px; justify-content:flex-end; padding-top:8px;">
+          <span>Home</span>
+          <span>Pipeline</span>
+          <span>Technology</span>
+          <span>Press</span>
+          <span>Careers</span>
+          <span>Contact</span>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+st.markdown("---")
+
+# ---- Hero section ----
+st.markdown(
+    """
+    <div class="hera-hero">
+      <h1>AI Partner Mapper</h1>
+      <div class="hera-sub">
+        Identify and compare AI partners in drug discovery and delivery, optimized for Hera-style priorities.
+      </div>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 # -----------------------------
 # 1) Starter dataset (edit/expand)
 # -----------------------------
