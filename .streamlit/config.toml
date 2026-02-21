@@ -1,0 +1,7 @@
+[theme]
+# Hera-like: deep navy + light blue accents
+primaryColor = "#7FB6FF"
+backgroundColor = "#061A2B"
+secondaryBackgroundColor = "#0A243D"
+textColor = "#EAF2FF"
+font = "sans serif"
